@@ -1,0 +1,24 @@
+header > *{
+    display: inline-block;    
+}
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+.menu-item {
+    display: inline-block;
+    padding-top: 38px;
+    padding-right: 50px;
+    padding-bottom: 25px
+}
+.right-side {
+    width: 49%;
+    display: inline-block;
+}
+.left-side {
+    width: 49%;
+    display: inline-block;
+    vertical-align: top;
+}
