@@ -1,0 +1,143 @@
+body {
+    font-family: 'Cera pro', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 0 24px;
+    gap: 50px;
+    margin: 64px auto 0;
+    display: flex;
+}
+
+.products-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 70px 32px;
+}
+
+.product-card {
+    display: block;
+    text-decoration: none;
+    width: calc(33.3333% - 21.33333px);
+}
+
+.product-card:hover h3 {
+    text-decoration: underline;
+}
+
+.product-card img {
+    display: block;
+    width: 250px;
+    height: 250px;
+}
+
+.product-card h3 {
+    margin: 12px 0 6px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #3D3D3D;
+}
+
+.product-card p {
+    margin: 0;
+    font-weight: 700;
+    font-size: 18px;
+    color: #46A358;
+}
+
+aside {
+    width: 310px;
+    background-color: #FBFBFB;
+    flex-shrink: 0;
+}
+
+aside img {
+    width: 100%;
+}
+
+nav {
+    padding: 14px 18px;
+}
+
+nav h3 {
+    margin: 0 0 16px;
+}
+
+.categories {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 360px;
+}
+
+.categories li {
+    list-style-type: none;
+}
+
+.categories li {
+    margin-bottom: 24px;
+    margin-left: 12px;
+}
+
+.categories a {
+    font-weight: 400;
+    font-size: 15px;
+    color: #3D3D3D;
+    text-decoration: none;
+}
+
+.categories a:hover {
+    text-decoration: underline;
+    font-weight: 700;
+    color: #46A358;
+}
+
+.subcategories {
+    display: flex;
+    gap: 32px;
+    margin-bottom: 32px;
+}
+
+.subcategories a {
+   font-weight: 400;
+   font-size: 15px;
+   color: #3D3D3D;
+   text-decoration: none;
+}
+
+.subcategories a:hover {
+    text-decoration: underline;
+    font-weight: 700;
+    color: #46A358;
+}
+
+.subcategories .sort {
+    margin-left: auto;
+}
+
+.pagination {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 90px;
+}
+
+.pagination > div {
+    width: 35px;
+    height: 35px;
+    border-radius: 4px;
+    background-color: white;
+    color: #3D3D3D;
+    font-weight: 300;
+    font-size: 18px;
+    border: 1px solid #E5E5E5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagination > div:hover {
+    background-color: #46A358;
+    border-color: #46A358;
+    color: white;
+}
