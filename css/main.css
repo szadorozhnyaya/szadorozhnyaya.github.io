@@ -1,3 +1,6 @@
+body {
+    font-family: 'Cera pro', sans-serif;
+}
 li {
     margin-bottom: 16px;
     list-style-type: none;
