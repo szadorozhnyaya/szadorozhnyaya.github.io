@@ -63,7 +63,7 @@ body {
     padding: 32px 24px;
 }
 
-.contact-section > div {
+.contact-section > * {
     max-width: 240px;
     display: flex;
     align-items: center;
@@ -72,7 +72,13 @@ body {
 .contact-section a {
     text-decoration: none;
     color: rgba(61, 61, 61, 1);
+}
 
+.contact-section a.logo {
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 18px;
+    color: #329c47;
 }
 
 .contact-section img {
@@ -90,6 +96,11 @@ body {
 .user-resources ul {
     margin: 0;
     padding: 0;
+}
+
+.user-resources {
+    border-radius: 4px;
+    border: #52C368;
 }
 
 .user-resources li {
@@ -153,6 +164,6 @@ footer{
 }
 
 .input-group button:active {
-    background-color: rgba(70, 163, 88, 1);
+    background-color: rgb(30, 78, 39);
     color: white;
 }
