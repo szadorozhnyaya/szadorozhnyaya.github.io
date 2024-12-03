@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration Panel</title>
+    <link rel="stylesheet" href="../../fonts/cera_pro/cera_pro.css">
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
@@ -12,11 +13,11 @@
         <div class="links">
             <a href="#">Login</a>
             |
-            <a href="#">Registration</a>
+            <a class="color" href="#">Register</a>
         </div>
         <h2>Enter your email and password to register.</h2>
     
-        <form>
+        <form class="container">
             <input type="text" placeholder="User name" required>
             <input type="email" placeholder="Enter your email address" required>
             <input type="password" placeholder="Password">
@@ -24,10 +25,21 @@
             <button>Register</button>
         </form>
     
-        <h2>Or register with</h2>
+        <div class="title-with-lines">
+            <div class="line"></div>
+            <h2>Or register with</h2>
+            <div class="line"></div>
+        </div>
         <div class="buttons">
-            <button>Continue with Google</button>
-            <button>Continue with Facebook</button>
+            <button>
+                <img src="./images/googleicon.svg" alt="google-icon">
+                Continue with Google
+            </button>
+            
+            <button>
+                <img src="./images/facebookicon.svg" alt="facebook-icon">
+                Continue with Facebook
+            </button>
         </div>
      </div>
  </main>
