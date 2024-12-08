@@ -558,3 +558,16 @@ footer {
   background-color: rgb(30, 78, 39);
   color: white;
 }
+
+.loading-spinner {
+  animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

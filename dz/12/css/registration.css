@@ -3,6 +3,7 @@ body, html {
     height: 100%;
     margin: 0;
     font-family: sans-serif;
+    position: relative;
 }
 
 body {
@@ -125,4 +126,71 @@ form button {
     display: block;
     width: 20px;
     height: 20px;
+}
+
+#preloader {
+    height: 100dvh;
+    width: 100dvw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: hidePreloader 3s linear;
+    animation-fill-mode: forwards;
+}
+
+.loading-spinner {
+    animation: rotate 2s linear infinite;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.checkbox-group input {
+    display: none;
+}
+
+.checkbox-group input:checked + svg path {
+    stroke: rgba(70, 163, 88, 1);
+}
+
+.checkbox-group:active svg {
+    animation: shake 0.35s;
+}
+
+.checkbox-group svg {
+    width: 24px;
+    height: 24px;
+}
+
+@keyframes shake {
+    0% { transform: translateY(0) }
+    25% { transform: translateY(5px) }
+    50% { transform: translateY(-5px) }
+    75% { transform: translateY(5px) }
+    100% { transform: translateY(0) }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes hidePreloader {
+    from {
+        display: flex;
+    }
+    to {
+        display: none;
+    }
 }
