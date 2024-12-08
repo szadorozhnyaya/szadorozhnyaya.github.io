@@ -194,3 +194,17 @@ form button {
         display: none;
     }
 }
+
+
+@media (max-width: 480px) {
+    main {
+        height: auto;
+    }
+
+    .registration {
+        padding-left: 24px;
+        padding-right: 24px;
+        padding-top: 24px;
+        width: 100%;
+    }
+}
